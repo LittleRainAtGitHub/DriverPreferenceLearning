@@ -89,7 +89,7 @@ More experiments are still undergoing, and the overall results will be released 
 
 - [Confusion Matrix in Python: plot a pretty confusion matrix (like Matlab) in python using seaborn and matplotlib](https://github.com/wcipriano/pretty-print-confusion-matrix)
 
-- [PyTorch - Python Deep Learning Neural Network API](https://deeplizard.com/learn/video/NSKghk0pcco)
+- [PyTorch - Python Deep Learning Neural Network API - DeepLizard](https://deeplizard.com/learn/video/NSKghk0pcco)
 
 
 ## Dependencies
