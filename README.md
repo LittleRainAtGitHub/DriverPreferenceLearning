@@ -26,6 +26,7 @@ In each scenario, the lane-change status of drivers is discriminated into three 
 
 ![image](https://user-images.githubusercontent.com/45302863/162692338-629dbca5-3b20-4038-aa3e-9045f4e9f55e.png)
 
+{:.image-caption}
 *Lane-change scenario and three status of driver*
 
 Each driver was instructed to perform the lane-change task for multiple times. Ultimately, our dataset contains data from 9, 10, and 4 lane-change tasks for driver #1, #2 and #3 respectively.
@@ -95,3 +96,8 @@ More experiments are still undergoing, and the overall results will be released 
 - Numpy
 - Matplotlib
 - Pandas
+
+.image-caption {
+  text-align: center;
+  font-size: .8rem;
+  color: light-grey;
