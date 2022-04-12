@@ -20,7 +20,7 @@ In our experiments, we trained a three-layer classification network to learn the
 
 Our simulated-based dataset contains the state features of 3 different drivers in lane-change scenario. Specifically, every state contains 7 features, namely the longitudinal and the lateral position of the host vehicle at time step t, the longtudinal and lateral distance of the front vehicle at time step t, and the heading angle, velocity and steering wheel angle of host vehicle at time step t. The state at time step t can therefore be represented as below.
 
-**s**<sub>t;</sub> = \[_x_<sub>h,t;</sub>, _y_<sub>h,t;</sub>, &theta<sub>h,t;</sub>, _x_<sub>f,t;</sub>, _y_<sub>f,t;</sub>, _v_<sub>h,t;</sub>, &alpha<sub>h,t;</sub>,\]
+**s**<sub>t</sub> = \[_x_<sub>h,t</sub>, _y_<sub>h,t</sub>, &theta;<sub>h,t</sub>, _x_<sub>f,t</sub>, _y_<sub>f,t</sub>, _v_<sub>h,t;</sub>, &alpha;<sub>h,t;</sub>,\]
 
 In each scenario, the lane-change status of drivers is discriminated into three categories, namely Lane Keeping (LK), Preparing Lane-Change (PLC), and Lane Changing (LC), shown as below. For each time step, the lane-change status of the driver are manually discriminated and labeled.
 
