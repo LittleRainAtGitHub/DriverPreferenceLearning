@@ -24,10 +24,10 @@ Our simulated-based dataset contains the state features of 3 different drivers i
 
 In each scenario, the lane-change status of drivers is discriminated into three categories, namely Lane Keeping (LK), Preparing Lane-Change (PLC), and Lane Changing (LC), shown as below. For each time step, the lane-change status of the driver are manually discriminated and labeled.
 
-![image](https://user-images.githubusercontent.com/45302863/162692338-629dbca5-3b20-4038-aa3e-9045f4e9f55e.png)
+
+![image](https://user-images.githubusercontent.com/45302863/162692338-629dbca5-3b20-4038-aa3e-9045f4e9f55e.png =250x)
 
 <figcaption align = "center"><b>Fig.1 - Lane-change scenario and three status of driver</b></figcaption>
-
 
 
 Each driver was instructed to perform the lane-change task for multiple times. Ultimately, our dataset contains data from 9, 10, and 4 lane-change tasks for driver #1, #2 and #3 respectively.
@@ -40,7 +40,7 @@ The details of data collecting can be found in our previous paper [Transferable 
 
 - **DriverP_AllinOne_train**: Training code with data from all tasks wrapped in a compounded dataset. To switch the data source from different drivers and tasks, simply change `driverid`, `lcid` (abbr for lane-change id) and `task_size`.
 
-- **DriverP_AGEM_train** (Release after paper out): Training code with data from a stream of tasks, the use of A-GEM is optional. When setting `AGem = True`, the code practices LLL with A-GEM; when setting `AGem = False`, the code practices Multi-task learning without using A-GEM.
+- **DriverP_AGEM_train** (Release with paper): Training code with data from a stream of tasks, the use of A-GEM is optional. When setting `AGem = True`, the code practices LLL with A-GEM; when setting `AGem = False`, the code practices Multi-task learning without using A-GEM.
 
 - **DriverP_HypsSelection**: Training code for hyperparameter selection before LLL with A-GEM. The training data should be in a relatively small scale (e.g., data from only 1 or 2 tasks). Then in LLL with A-GEM, all hyperparameters are fixed.
 
