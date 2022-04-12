@@ -10,10 +10,10 @@ In our experiments, we trained a three-layer classification network to learn the
 - **All-in-One Learning**
   In the learning process, the learner is presented with a compounded dataset that accumulates all history data from previous tasks.
   
-- **Multi-task learning**
+- **Multi-task Learning**
   Multi-task learning process is also constructed to make the network learn from a stream of tasks. In this setting, the learner stores the trained network when learning from every task, and update the network only with training data in new task.
   
-- **LifeLong learning with A-GEM** (train with streams from multiple tasks using LLL with A-GEM)
+- **LifeLong Learning with A-GEM** (train with streams from multiple tasks using LLL with A-GEM)
   Similar to multi-task learning process, the learner of LLL is presented with a stream of lane-change tasks, and it continuously updates the network with the training data in new task. In this setting, A-GEM leverages a small episodic memory and a small change to the loss function to maintain the past experience. Detalis of LLL-AGEM can be found at [Efficient Lifelong Learning with A-GEM](https://arxiv.org/abs/1812.00420)
 
 ## Dataset
@@ -25,6 +25,8 @@ Our simulated-based dataset contains the state features of 3 different drivers i
 In each scenario, the lane-change status of drivers is discriminated into three categories, namely Lane Keeping (LK), Preparing Lane-Change (PLC), and Lane Changing (LC), shown as below. For each time step, the lane-change status of the driver are manually discriminated and labeled.
 
 ![image](https://user-images.githubusercontent.com/45302863/162692338-629dbca5-3b20-4038-aa3e-9045f4e9f55e.png)
+
+| Lane-change scenario and three status of driver |
 
 Each driver was instructed to perform the lane-change task for multiple times. Ultimately, our dataset contains data from 9, 10, and 4 lane-change tasks for driver #1, #2 and #3 respectively.
 
