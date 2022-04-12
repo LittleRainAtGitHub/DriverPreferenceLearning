@@ -62,15 +62,14 @@ Here shows the confusion matrix of the accuracy of network trained over 4 tasks 
 
 <img src="https://user-images.githubusercontent.com/45302863/162710349-4a72a5c8-8ef4-49fa-a520-aad0a7f4ab7a.svg" width="500"/>
 
-![AllinOne_driver3_label3_ConfusionMatrix](https://user-images.githubusercontent.com/45302863/162710349-4a72a5c8-8ef4-49fa-a520-aad0a7f4ab7a.svg)
-
 - **Multi-task Learning**:
 
-![AGEM_False_driver3_label3_ConfusionMatrix](https://user-images.githubusercontent.com/45302863/162710376-89209105-e5da-4886-b74b-580b1ba3e65b.svg)
+<img src="https://user-images.githubusercontent.com/45302863/162710376-89209105-e5da-4886-b74b-580b1ba3e65b.svg" width="500"/>
 
 - **LLL with A-GEM**:
 
-![AGEM_True_driver3_label3_ConfusionMatrix](https://user-images.githubusercontent.com/45302863/162710390-bba8034e-6ee6-4933-a3a4-ab0195685c80.svg)
+<img src="https://user-images.githubusercontent.com/45302863/162710390-bba8034e-6ee6-4933-a3a4-ab0195685c80.svg" width="500"/>
+
 
 The performance of LLL-AGEM is obviously better than that of Multi-task Learning, and almost the same to AllinOne Learning. This indicates LLL-AGEM can efficiently
  learn from new tasks while avoiding forgetting previous knowledge. While AllinOne Learning stored all task data and went over all data during training, LLL-AGM used only about 1/3 the size of memory used in AllinOne Learning, and consumed only about 1/3 the time consumed in AllinOne training process. In real-time application, this can effectively save the memory and computational cost when driving data accumulate fast and the computational/memory source is limited.
