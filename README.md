@@ -3,18 +3,18 @@ Learning Lane-change preference of drivers
 
 ## Introduction
 
-This project is to learn the lane-change preference of different drivers in several lane-change tasks. For every task, the dataset contains the state features of drivers and the host vehicle in the lane-change process, with corresponding lane-change status of the driver in each scene, namely Lane Keeping (LK), Preparing Lane-Change (PLC), and Lane Changing (LC). The aim of this project is to train a classification network. The network can infer the lane-change status of drivers in terms of current state features.
-
-In the learning process, the learner is presented with a compounded dataset that accumulates all history data from previous tasks. Training on all task data guarantees the prediction accuracy of the network when testing on every history task. However, in real-world application, the learner needs to acquire new skills to adapt to the changes in the environment. In this case, the learner has to continuously update the network w.r.t. newly-collected data from new tasks. A solution is to continously increment dataset and go over all data to retrain the network, but this process can be very computational and memory consuming, since all previous data has to be stored. 
-
-To address this problem, multi-task learning process can be utilized to enable the network learn from a stream of tasks. In this setting, the learner only stores the trained network when learning from every task, and update the network only with training data in new task. However, the network may suffer catastrophic forgetting if new data relates little to the previous experience, leading to performance drop when testing on previous tasks. Moreover, since the network cannot reuse the experience from previous tasks, it may even requires copious amounts of labeled data from new tasks in order to obtain high prediction performance.
-
-To learn from new tasks efficiently and maintain the experience accumulated in the past, LLL with A-GEM is adopted in this project. Similar to multi-task learning process, the learner of LLL is presented with a stream of lane-change tasks, and it continuously updates the network with the training data in new task. The difference is, in this setting, the learner can remember and reuse the knowledge acquired in the previous lane-change tasks. This is achieved by A-GEM, which leverages a small episodic memory and a small change to the loss function to maintain the past experience. By incrementally building a data-driven prior which may be leveraged to speed up learning of a new task, the LLL learner enables the network to quickly learn from new tasks with limited training samples, time and memory. Since the past experience is constantly retained and updated, the network can also maintain high prediction performance in previous tasks. 
+This project is to learn the lane-change preference of different drivers in multiple lane-change tasks. For every task, the dataset contains the state features of drivers and the host vehicle in the lane-change process, with corresponding lane-change status of the driver in each scene, namely Lane Keeping (LK), Preparing Lane-Change (PLC), and Lane Changing (LC). The aim of this project is to train a classification network. The network can infer the lane-change status of drivers in terms of current state features.
 
 In our experiments, we trained a three-layer classification network to learn the lane-change preference with the above introduced learning settings:
-- **All-in-One Learning** (train with compounded data from all tasks)
-- **Multi-task learning** (train with streams of data from multiple tasks without using A-GEM)
+
+- **All-in-One Learning**
+  In the learning process, the learner is presented with a compounded dataset that accumulates all history data from previous tasks.
+  
+- **Multi-task learning**
+  Multi-task learning process is also constructed to make the network learn from a stream of tasks. In this setting, the learner stores the trained network when learning from every task, and update the network only with training data in new task.
+  
 - **LifeLong learning with A-GEM** (train with streams from multiple tasks using LLL with A-GEM)
+  Similar to multi-task learning process, the learner of LLL is presented with a stream of lane-change tasks, and it continuously updates the network with the training data in new task. In this setting, A-GEM leverages a small episodic memory and a small change to the loss function to maintain the past experience. Detalis of LLL-AGEM can be found at [Efficient Lifelong Learning with A-GEM](https://arxiv.org/abs/1812.00420)
 
 ## Dataset
 
