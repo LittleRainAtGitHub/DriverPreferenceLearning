@@ -84,11 +84,8 @@ More experiments are still undergoing, and the overall results will be released 
 ## Reference
 
 - [Efficient Lifelong Learning with A-GEM](https://arxiv.org/abs/1812.00420)
-
 - [Transferable Driver Behavior Learning via Distribution Adaption in the Lane Change Scenario](https://ieeexplore.ieee.org/abstract/document/8813781)
-
 - [Confusion Matrix in Python: plot a pretty confusion matrix (like Matlab) in python using seaborn and matplotlib](https://github.com/wcipriano/pretty-print-confusion-matrix)
-
 - [PyTorch - Python Deep Learning Neural Network API - DeepLizard](https://deeplizard.com/learn/video/NSKghk0pcco)
 
 
