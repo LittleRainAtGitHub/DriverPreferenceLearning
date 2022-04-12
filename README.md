@@ -25,6 +25,7 @@ Our simulated-based dataset contains the state features of 3 different drivers i
 In each scenario, the lane-change status of drivers is discriminated into three categories, namely Lane Keeping (LK), Preparing Lane-Change (PLC), and Lane Changing (LC), shown as below. For each time step, the lane-change status of the driver are manually discriminated and labeled.
 
 ![image](https://user-images.githubusercontent.com/45302863/162692338-629dbca5-3b20-4038-aa3e-9045f4e9f55e.png)
+
 *Lane-change scenario and three status of driver*
 
 Each driver was instructed to perform the lane-change task for multiple times. Ultimately, our dataset contains data from 9, 10, and 4 lane-change tasks for driver #1, #2 and #3 respectively.
