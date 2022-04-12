@@ -8,12 +8,15 @@ This project is to learn the lane-change preference of different drivers in mult
 In our experiments, we trained a three-layer classification network to learn the lane-change preference with three different learning settings:
 
 - **All-in-One Learning**
+  
   In the learning process, the learner is presented with a compounded dataset that accumulates all history data from previous tasks.
   
 - **Multi-task Learning**
+  
   Multi-task learning process is also constructed to make the network learn from a stream of tasks. In this setting, the learner stores the trained network when learning from every task, and update the network only with training data in new task.
   
-- **LifeLong Learning with A-GEM** (train with streams from multiple tasks using LLL with A-GEM)
+- **LifeLong Learning with A-GEM**
+  
   Similar to multi-task learning process, the learner of LLL is presented with a stream of lane-change tasks, and it continuously updates the network with the training data in new task. In this setting, A-GEM creates a small episodic memory and makes change to the loss function to maintain the past experience. Detalis of LLL-AGEM can be found at [Efficient Lifelong Learning with A-GEM](https://arxiv.org/abs/1812.00420)
 
 ## Dataset
