@@ -5,7 +5,7 @@ Learning Lane-change preference of drivers
 
 This project is to learn the lane-change preference of different drivers in multiple lane-change tasks. For every task, the dataset contains the state features of drivers and the host vehicle in the lane-change process, with corresponding lane-change status of the driver in each scene, namely Lane Keeping (LK), Preparing Lane-Change (PLC), and Lane Changing (LC). The aim of this project is to train a classification network. The network can infer the lane-change status of drivers in terms of current state features.
 
-In our experiments, we trained a three-layer classification network to learn the lane-change preference with the above introduced learning settings:
+In our experiments, we trained a three-layer classification network to learn the lane-change preference with three different learning settings:
 
 - **All-in-One Learning**
   In the learning process, the learner is presented with a compounded dataset that accumulates all history data from previous tasks.
