@@ -54,7 +54,7 @@ Each driver was instructed to perform the lane-change task for multiple times. U
   
   Pre-training code for hyperparameter selection. The training data should be in a relatively small scale (e.g., data from only 1 or 2 tasks). In LLL with A-GEM, all hyperparameters are fixed.
 
-  After a run, the code saves the trained network in .\model, and the run_result & evaluation_result in .\results. The run_result stores the loss, accuracy and duration in the training process of each epoch and task, as well as the selected hyper-parameters. The evaluation_result stores the classification accuracy on validation sets of all tasks after the training of each task.
+  After a run, the above codes save the trained network in .\model, and the run_result & evaluation_result in .\results. The run_result stores the loss, accuracy and duration in the training process of each epoch and task, as well as the selected hyper-parameters. The evaluation_result stores the classification accuracy on validation sets of all tasks after the training of each task.
 
 - **DriverP_Eval**: 
 
