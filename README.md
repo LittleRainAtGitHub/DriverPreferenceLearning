@@ -33,7 +33,7 @@ Each driver was instructed to perform the lane-change task for multiple times. U
 <p><br></p>
 
 \* The details of data collecting can be found in our previous paper [Transferable Driver Behavior Learning via Distribution Adaption in the Lane Change Scenario](https://ieeexplore.ieee.org/abstract/document/8813781).
-<p>\* In this repositry, only **data in lane-change task #1 and #2 of driver #3** are included for demonstration.<br></p>
+
 \* In this repositry, only **data in lane-change task #1 and #2 of driver #3** are included for demonstration.
 
 ## Code
