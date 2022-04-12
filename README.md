@@ -30,7 +30,8 @@ In each scenario, the lane-change status of drivers is discriminated into three 
 <p><br></p>
 Each driver was instructed to perform the lane-change task for multiple times. Ultimately, our dataset contains data from 9, 10, and 4 lane-change tasks for driver #1, #2 and #3 respectively.
 
-The details of data collecting can be found in our previous paper [Transferable Driver Behavior Learning via Distribution Adaption in the Lane Change Scenario](https://ieeexplore.ieee.org/abstract/document/8813781).
+
+\* The details of data collecting can be found in our previous paper [Transferable Driver Behavior Learning via Distribution Adaption in the Lane Change Scenario](https://ieeexplore.ieee.org/abstract/document/8813781).
 
 \* In this repositry, only **data in lane-change task #1 and #2 of driver #3** are included for demonstration.
 
