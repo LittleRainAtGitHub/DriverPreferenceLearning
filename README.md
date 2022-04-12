@@ -60,6 +60,8 @@ Here shows the confusion matrix of the accuracy of network trained over 4 tasks 
 
 - **AllinOne Learning**: 
 
+<img src="https://user-images.githubusercontent.com/45302863/162710349-4a72a5c8-8ef4-49fa-a520-aad0a7f4ab7a.svg" width="500"/>
+
 ![AllinOne_driver3_label3_ConfusionMatrix](https://user-images.githubusercontent.com/45302863/162710349-4a72a5c8-8ef4-49fa-a520-aad0a7f4ab7a.svg)
 
 - **Multi-task Learning**:
