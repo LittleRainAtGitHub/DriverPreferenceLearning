@@ -41,7 +41,7 @@ Each driver was instructed to perform the lane-change task for multiple times. U
 - **DriverP_AllinOne_train**: Training code with data from all tasks wrapped in a compounded dataset. To switch the data source from different drivers and tasks, simply change `driverid`, `lcid` (abbr for lane-change id) and `task_size`.
 
 - **DriverP_AGEM_train**: Training code with data from a stream of tasks, the use of A-GEM is optional. When setting `AGem = True`, the code practices LLL with A-GEM; when setting `AGem = False`, the code practices Multi-task learning without using A-GEM.
-  *This code will be released with the coming paper.
+  _*This code will be released with the coming paper._
 
 - **DriverP_HypsSelection**: Pre-training code for hyperparameter selection. The training data should be in a relatively small scale (e.g., data from only 1 or 2 tasks). In LLL with A-GEM, all hyperparameters are fixed.
 
